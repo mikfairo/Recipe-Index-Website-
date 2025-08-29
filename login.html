@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .background-main {
+        display: flex;
+        height: 100vh;
+        background: linear-gradient(rgb(241, 214, 162), white);
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        flex-direction: row;
+        display: flex;
+      }
+      i {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+
+      li:last-child {
+        border-right: none;
+      }
+      li a {
+        /* position: relative; */
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover:not(.active) {
+        background-color: rgb(255, 238, 3);
+      }
+      .active {
+        background-color: #04aa6d;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="recipe-main.html">Home</a></li>
+      <li><a href="recipes-secondary.html">Recipes</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="#about">About</a></li>
+      <li style="margin-left: auto">
+        <a href="#"
+          ><img
+            style="width: 29px"
+            src="./images/instagram.png"
+            alt="Instagram Icon"
+            class="icons"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            style="width: 31px"
+            src="./images/facebook.png"
+            alt="Facebook Icon"
+            class="icons"
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            style="width: 30px"
+            src="./images/youtube.png"
+            alt="Youtube Icon"
+            class="icons"
+        /></a>
+      </li>
+    </ul>
+    <div class="background-main">
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-
+/* 
 body {
     margin: 0;
 }
@@ -6,9 +6,31 @@ body {
     display: flex;
     height: 100vh;
     background: linear-gradient(rgb(241, 214, 162),white);
-    font-family: 'Bowlby One SC';
+    
+} */
+#homepage-bkg {
+  background-color: rgb(209, 115, 8);
+  position: absolute;
+  display: flex;
+  width: 10%;
+  height: 100%;
+  
 }
-ul {
+h1 {
+  border: 1px solid red ;
+  position: fixed;
+  display: flex;
+  font-family:"Oswald", sans-serif;
+  font-size: 140px;
+  transform: rotate(-90deg);
+  color: rgb(241, 214, 162);
+  /* right: 74%; */
+  margin-right: auto;
+  top: 27%;
+  z-index: 1; 
+  /* to bring forward */
+}
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,7 +48,8 @@ li:last-child {
   border-right: none;
 }
 li a {
-  display: block;
+  /* position: relative; */
+  /* display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -39,3 +62,4 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
+ */ */
