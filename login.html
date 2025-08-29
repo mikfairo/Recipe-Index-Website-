@@ -22,7 +22,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        height: 45px;
         background-color: white;
         flex-direction: row;
         display: flex;
@@ -36,32 +36,57 @@
         border-right: none;
       }
       li a {
-        /* position: relative; */
         display: block;
         color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
-      li a:hover:not(.active) {
+      /* li a:hover:not(.active) {
         background-color: rgb(255, 238, 3);
-      }
+      } */
       .active {
         background-color: #3d8067;
       }
+      .dropdown {
+        height: 35px;
+        overflow: hidden;
+        background-color: white;
+      }
+      .dropdown:hover {
+        height: 160px;
+      }
+      a:hover{
+        background-color: yellow;
+      }
+      p {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+      }
+      p:hover {
+        background-color: yellow;
+      }
+
     </style>
   </head>
   <body>
     <ul>
       <li><a class="active" href="recipe-main.html">Home</a></li>
-      <li><a href="recipes-secondary.html">Recipes</a></li>
       <li><a href="#">Blog</a></li>
+      <li>
+        <div class="dropdown">
+          <a href="recipes-secondary.html">Recipes</a>
+          <p>Popular</p>
+          <p>Seasonal</p>
+          <p>Saved</p>
+      </div>
       <li><a href="login.html">Login</a></li>
       <li><a href="#about">About</a></li>
       <li style="margin-left: auto">
         <a href="#"
           ><img
-            style="width: 29px"
+            style="width: 27px"
             src="./images/instagram.png"
             alt="Instagram Icon"
             class="icons"
@@ -70,7 +95,7 @@
       <li>
         <a href="#"
           ><img
-            style="width: 31px"
+            style="width: 28px"
             src="./images/facebook.png"
             alt="Facebook Icon"
             class="icons"
@@ -79,7 +104,7 @@
       <li>
         <a href="#"
           ><img
-            style="width: 30px"
+            style="width: 26px"
             src="./images/youtube.png"
             alt="Youtube Icon"
             class="icons"
@@ -88,13 +113,14 @@
     </ul>
     <div class="background-main">
         <div class="user-login">
-          <img src="/images/funny-chef.gif" alt="funny chef" />
+          <img src="./images/funny-chef.gif" alt="funny chef" />
         <form>
           <label for="username">Username:</label><br />
           <input type="text" id="fname" name="fname" /><br />
           <label for="password">Password:</label><br />
           <input type="password" id="lname" name="lname" />
         </form>
+        <button type="button" >Submit</button>
       </div>
     </div>
   </body>

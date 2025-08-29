@@ -12,3 +12,8 @@ img {
     padding: 5%;
     width: 60%;
 }
+button {
+    margin-top: 15px;
+    height: 4%;
+    width: 15%;
+}

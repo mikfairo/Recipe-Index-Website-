@@ -8,26 +8,44 @@ body {
     background: linear-gradient(rgb(241, 214, 162),white);
     
 } */
-#homepage-bkg {
-  background-color: rgb(209, 115, 8);
+.rotate-dish{
   position: absolute;
   display: flex;
-  width: 10%;
-  height: 100%;
-  z-index: 1;
+  background-color: transparent;
+  width: 60%;
+  right: 50px;
+  top: 250px;
+  transition-duration: 3s;
+}
+.rotate-dish:hover {
+  transform:rotate(360deg);
+}
+
+#noodles {
+  width: 45%;
 }
 h1 {
-  border: 1px solid red ;
+  /* border: 1px solid red ; */
   position: fixed;
   display: flex;
   font-family:"Oswald", sans-serif;
-  font-size: 140px;
+  font-size: 1000%;
   transform: rotate(-90deg);
   color: rgb(241, 214, 162);
-  /* right: 74%; */
+  right: 76%;
   margin-right: auto;
   top: 27%;
-  /* to bring forward */
+}
+#homepage-bkg {
+  background-color: rgb(209, 115, 8);
+  display: flex;
+  width: 10%;
+  height: 100%;
+  /* z-index: 1; */
+}
+img {
+  background-color: transparent;
+  width: 50px;
 }
 /* ul {
     list-style-type: none;
