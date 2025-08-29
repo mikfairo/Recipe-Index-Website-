@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
     <style>
       body {
         margin: 0;
+        background: linear-gradient(rgb(241, 214, 162), white);
       }
       .background-main {
         display: flex;
         height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         background: linear-gradient(rgb(241, 214, 162), white);
       }
       ul {
@@ -42,7 +47,7 @@
         background-color: rgb(255, 238, 3);
       }
       .active {
-        background-color: #04aa6d;
+        background-color: #3d8067;
       }
     </style>
   </head>
@@ -82,6 +87,15 @@
       </li>
     </ul>
     <div class="background-main">
+        <div class="user-login">
+          <img src="/images/funny-chef.gif" alt="funny chef" />
+        <form>
+          <label for="username">Username:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="lname" name="lname" />
+        </form>
+      </div>
     </div>
   </body>
 </html>

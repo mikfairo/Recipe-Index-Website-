@@ -14,7 +14,7 @@ body {
   display: flex;
   width: 10%;
   height: 100%;
-  
+  z-index: 1;
 }
 h1 {
   border: 1px solid red ;
@@ -27,7 +27,6 @@ h1 {
   /* right: 74%; */
   margin-right: auto;
   top: 27%;
-  z-index: 1; 
   /* to bring forward */
 }
 /* ul {
@@ -62,4 +61,4 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
 
- */ */
+ */ 
